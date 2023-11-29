@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/fav-icon.png" type="image/x-icon">
+  <title>Grocery Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Grocery Store</h1>
+        <div class="header-icons" id="basket-container">
+          <img src="images/shopping-cart.png" alt="Shopping Basket" class="basket-icon">
+          <span id="cart-counter">0</span>
+      </div>
+      </header>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="scrollToSection('hero')"onclick="alert('Home page loaded')">Home</a></li>
+      <li><a href="#"  onclick="scrollToSection('section')">Products</a></li>
+      <li><a href="#" onclick="scrollToSection('about-us-section')">About Us</a></li>
+      <li><a href="#" onclick="scrollToSection('contact')">Contact Us</a></li>
+    </ul>
+  </nav>
+   <div>
+      <main>
+    <section class="hero">
+    <h1 class="move-text"><strong>Black Friday Deals is Here Please Hurry UP</strong></h1>
+     <button class="button"onclick="scrollToSection('section')">SHOPNOW</button>
+    </section>
+
+    <section class="products" id="section">
+      <h2>Featured Products</h2>
+      <div class="product">
+        <img src="images/pack1.png" alt="Product 1">
+        <h3>Product Name</h3>
+        <p>Product description.</p>
+        <a href="#" class="button" onclick="addToCart()">Add to Cart 2.8$ @ 1Kg</a>
+      </div>
+      <div class="product">
+        <img src="images/pack2.jpg" alt="Product 2">
+        <h3>Product Name</h3>
+        <p>Product description.</p>
+        <a href="#" class="button" onclick="addToCart()">Add to Cart 3$ @ 1Kg</a>
+      </div>
+      <div class="product">
+        <img src="images/pack3.png" alt="Product 3">
+        <h3>Product Name</h3>
+        <p>Product description.</p>
+        <a href="#" class="button"onclick="addToCart()">Add to Cart 4$ @ 1Kg</a>
+      </div>
+    </section>
+   </div>
+
+   <div class="move-text">
+    <strong>MAJOR PRODUCTS</strong>
+  </div>
+
+   <section id="product">
+            <div class="product-box">
+                    <img alt="apple" src="images/apple.png">
+                    <strong>Apple</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">2$</span>
+                    <!--cart-btn------->
+                    <button class="cart-btn"onclick="addToCart()">Add to cart 5$</button>
+        </div>
+          <!--box---------->
+          <div class="product-box">
+            <img alt="apple" src="images/chili.png">
+            <strong>Chili</strong>
+            <span class="quantity">1 KG</span>
+            <span class="price">3$</span>
+            <button class="cart-btn"onclick="addToCart()">Add to cart 6$</button>        
+        </div>
+        <div class="product-box">
+          <img alt="apple" src="images/onion.png">
+          <strong>Onion</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">1$</span>
+          <button class="cart-btn"onclick="addToCart()">Add to cart 7$</button>
+      </div>
+      <div class="product-box">
+        <img alt="apple" src="images/patato.png">
+        <strong>Patato</strong>
+        <span class="quantity">1 KG</span>
+        <span class="price">2.2$</span>
+        <!--cart-btn------->
+        <button class="cart-btn"onclick="addToCart()">Add to cart 7$</button>
+        
+    </div>
+    <div class="product-box">
+      <img alt="apple" src="images/garlic.png">
+      <strong>Garlic</strong>
+      <span class="quantity">1 KG</span>
+      <span class="price">3$</span>
+      <!--cart-btn------->
+      <button class="cart-btn"onclick="addToCart()">Add to cart 5$</button>
+      
+  </div>
+  <div class="product-box">
+    <img alt="apple" src="images/tamato.png">
+    <strong>Tamato</strong>
+    <span class="quantity">1 KG</span>
+    <span class="price">1.4$</span>
+    <button class="cart-btn"onclick="addToCart()">Add to cart 4$</button>
+  
+</div>
+</div>
+</section>
+   <section id="about-us-section">
+    <h2 class="about-title">About Us</h2>
+    <p>Welcome to Grocery Store, your trusted source for high-quality groceries. We are committed to providing fresh and locally sourced products to our valued customers. Our mission is to make your shopping experience convenient, affordable, and delightful. Explore our diverse range of products and enjoy the ease of online shopping with Grocery Store.</p>
+    
+    <div class="store-images">
+        <img src="images/pic1.jpg" alt="Store 1">
+        <img src="images/pic2.jpg" alt="Store 2">
+        <img src="images/pic3.jpg" alt="Store 3">
+        <!-- Add more store images as needed -->
+    </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us through the following channels:</p>
+  
+    <div>
+      <h3>Download Our App</h3>
+  
+      <!-- Play Store download -->
+      <div class="app-download">
+        <img src="images/mobile-app.png" alt="Play Store">
+        <p>Download from the Play Store</p>
+      </div>
+  
+      <!-- App Store download -->
+      <div class="app-download">
+        <img src="images/appstore-btn.png" alt="App Store">
+        <p>Download from the App Store</p>
+    </div>
+    <div>
+      <h3>Other Contact Channels</h3>
+      <p>Email: info@grocerystore.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+  </section>
+  
+  </main>
+  <footer>
+    <p>&copy; 2023 Grocery Store</p>
+  </footer>
+  <script src="scripts/scripts.js"></script>
+  
+</body>
+</html>
